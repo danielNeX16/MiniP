@@ -24,10 +24,10 @@ def detect_faces(our_image):
         if (uncertainty< 53):
             if (id == 1 or id == 2 or id == 3 or id == 4):
                 name = "Daniel"
-                cv2.putText(img, name, (x, y + h), cv2.FONT_HERSHEY_COMPLEX_SMALL, 2.0, (0, 0, 255))
+                cv2.putText(img, name, (x, y + h), cv2.FONT_HERSHEY_COMPLEX_SMALL, 2.0, (0, 255, 0))
             if (id == 7):
                 name = "Deol"
-                cv2.putText(img, name, (x, y + h), cv2.FONT_HERSHEY_COMPLEX_SMALL, 2.0, (0, 0, 255))
+                cv2.putText(img, name, (x, y + h), cv2.FONT_HERSHEY_COMPLEX_SMALL, 2.0, (0, 255, 0))
         else:
             cv2.putText(img, 'Unknown', (x, y + h), cv2.FONT_HERSHEY_COMPLEX_SMALL, 2.0, (255, 0, 0))
 
